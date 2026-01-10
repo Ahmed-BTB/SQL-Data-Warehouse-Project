@@ -11,7 +11,8 @@ The project follows the **Medallion Architecture** with three layers:
 - **Bronze Layer**: Raw ERP & CRM CSV data ingested into SQL Server.  
 - **Silver Layer**: Cleansing, deduplication, and normalization for consistency.  
 - **Gold Layer**: Business-ready star schema optimized for analytical queries and reporting.
-![Data Architecture Diagram](./scripts/bronze/Data%20Architecture.drawio.png)
+
+![Data Architecture Diagram](docs/Data_Architecture.png)
 
 ---
 
@@ -49,29 +50,31 @@ The project follows the **Medallion Architecture** with three layers:
 ---
 
 ## 📂 Repository Structure
+```
 data-warehouse-project/
 │
-├── datasets/                           # Raw datasets (ERP and CRM CSV files)
+├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
 │
-├── docs/                               # Documentation & architecture diagrams
-│   ├── data_architecture.drawio        # Medallion architecture (Bronze, Silver, Gold)
-│   ├── data_flow.drawio                # Data flow diagram
-│   ├── data_models.drawio              # Star schema model (fact & dimension tables)
-│   ├── data_catalog.md                 # Dataset catalog with field descriptions
-│   ├── naming-conventions.md           # Guidelines for table/column naming
+├── docs/                               # Project documentation and architecture details
+│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
+│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
+│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
+│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
+│   ├── data_models.drawio              # Draw.io file for data models (star schema)
+│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
 │
-├── scripts/                            # SQL ETL scripts
-│   ├── bronze/                         # Load raw ERP & CRM data
-│   ├── silver/                         # Cleanse & transform data
-│   ├── gold/                           # Create analytical star schema
+├── scripts/                            # SQL scripts for ETL and transformations
+│   ├── bronze/                         # Scripts for extracting and loading raw data
+│   ├── silver/                         # Scripts for cleaning and transforming data
+│   ├── gold/                           # Scripts for creating analytical models
 │
-├── tests/                              # Data quality checks & validation queries
+├── tests/                              # Test scripts and quality files
 │
-├── README.md                           # Project overview & instructions
-├── LICENSE                             # MIT License
-├── .gitignore                          # Git ignore rules
-└── requirements.txt                    # Dependencies (SQL Server, SSMS, etc.)
-
+├── README.md                           # Project overview and instructions
+├── LICENSE                             # License information for the repository
+├── .gitignore                          # Files and directories to be ignored by Git
+└── requirements.txt                    # Dependencies and requirements for the project
+```
 
 ---
 
