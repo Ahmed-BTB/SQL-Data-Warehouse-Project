@@ -72,7 +72,6 @@ data-warehouse-project/
 │
 ├── README.md                           # Project overview and instructions
 ├── LICENSE                             # License information for the repository
-└── requirements.txt                    # Dependencies and requirements for the project
 ```
 
 ---
